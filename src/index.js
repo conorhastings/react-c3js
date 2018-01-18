@@ -2,40 +2,41 @@
 
 import React from 'react';
 import { findDOMNode } from 'react-dom';
+import PropTypes from 'prop-types';
 
-export default class C3Chart extends React.Component {
+export default class C3Chart extends Component {
 
   displayName: 'C3Chart'
 
   propTypes: {
-    data: React.PropTypes.object.isRequired,
-    size: React.PropTypes.object,
-    padding: React.PropTypes.object,
-    color: React.PropTypes.object,
-    interaction: React.PropTypes.object,
-    transition: React.PropTypes.object,
-    oninit: React.PropTypes.func,
-    onrendered: React.PropTypes.func,
-    onmouseover: React.PropTypes.func,
-    onmouseout: React.PropTypes.func,
-    onresize: React.PropTypes.func,
-    onresized: React.PropTypes.func,
-    axis: React.PropTypes.object,
-    grid: React.PropTypes.object,
-    regions: React.PropTypes.array,
-    legend: React.PropTypes.object,
-    tooltip: React.PropTypes.object,
-    subchart: React.PropTypes.object,
-    zoom: React.PropTypes.object,
-    point: React.PropTypes.object,
-    line: React.PropTypes.object,
-    area: React.PropTypes.object,
-    bar: React.PropTypes.object,
-    pie: React.PropTypes.object,
-    donut: React.PropTypes.object,
-    gauge: React.PropTypes.object,
-    className: React.PropTypes.string,
-    style: React.PropTypes.object
+    data: PropTypes.object.isRequired,
+    size: PropTypes.object,
+    padding: PropTypes.object,
+    color: PropTypes.object,
+    interaction: PropTypes.object,
+    transition: PropTypes.object,
+    oninit: PropTypes.func,
+    onrendered: PropTypes.func,
+    onmouseover: PropTypes.func,
+    onmouseout: PropTypes.func,
+    onresize: PropTypes.func,
+    onresized: PropTypes.func,
+    axis: PropTypes.object,
+    grid: PropTypes.object,
+    regions: PropTypes.array,
+    legend: PropTypes.object,
+    tooltip: PropTypes.object,
+    subchart: PropTypes.object,
+    zoom: PropTypes.object,
+    point: PropTypes.object,
+    line: PropTypes.object,
+    area: PropTypes.object,
+    bar: PropTypes.object,
+    pie: PropTypes.object,
+    donut: PropTypes.object,
+    gauge: PropTypes.object,
+    className: PropTypes.string,
+    style: PropTypes.object
   }
 
   componentDidMount() {
